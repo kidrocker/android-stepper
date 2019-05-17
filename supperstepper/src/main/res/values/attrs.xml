@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Stepper">
-        <attr name="stepperStyle" format="enum"/>
+        <attr name="stepperStyle" format="enum">
+            <enum name="dots">1</enum>
+            <enum name="bars">2</enum>
+            <enum name="text">3</enum>
+            <enum name="combine">4</enum>
+        </attr>
         <attr name="stepCount" format="integer"/>
         <attr name="stepColor" format="color"/>
         <attr name="stepTimed" format="boolean"/>
