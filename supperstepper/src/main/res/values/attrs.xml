@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Stepper">
+        <attr name="stepperStyle" format="enum"/>
+        <attr name="stepCount" format="integer"/>
+        <attr name="stepColor" format="color"/>
+        <attr name="stepTimed" format="boolean"/>
+        <attr name="stepInterval" format="integer"/>
+    </declare-styleable>
+</resources>
