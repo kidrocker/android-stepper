@@ -6,8 +6,9 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
+import android.view.ViewGroup
 
-class Stepper : View {
+class Stepper : ViewGroup {
     private var mContext: Context? = null
     private var STEPPER_TYPE:Int=0
     private var STEPPER_COUNT = 3
@@ -18,12 +19,13 @@ class Stepper : View {
     private var WIDTH=0
     private var paint:Paint? = null
 
-
-
     constructor(context: Context) : super(context){
         init()
     }
 
+    /**
+     * Method used to initialize all the variables needed
+     */
     private fun init() {
         paint = Paint()
     }
@@ -51,14 +53,13 @@ class Stepper : View {
 
     }
 
-    override fun onDraw(canvas: Canvas) {
-        super.onDraw(canvas)
-
-    }
-
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         WIDTH = w
         HEIGHT = h
+    }
+
+    override fun onLayout(changed: Boolean, l: Int, t: Int, r: Int, b: Int) {
+
     }
 }
